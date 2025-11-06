@@ -12,6 +12,7 @@ import "solidity-coverage";
 import "./tasks/accounts";
 import "./tasks/FHECounter";
 
+// Configuration variables setup
 // Run 'npx hardhat vars setup' to see the list of variables that need to be set
 
 const MNEMONIC: string = vars.get("MNEMONIC", "test test test test test test test test test test test junk");
