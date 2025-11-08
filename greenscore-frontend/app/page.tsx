@@ -6,6 +6,7 @@ import { SecurityPillars } from "@/components/SecurityPillars";
 import { GreenScoreDashboard } from "@/components/GreenScoreDashboard";
 import { AppFooter } from "@/components/AppFooter";
 
+// Main page component for GreenScore dApp
 export default function Page() {
   return (
     <>
