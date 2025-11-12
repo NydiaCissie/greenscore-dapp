@@ -18,6 +18,7 @@ const INITIAL_FORM: FormState = {
   description: "",
 };
 
+// Reusable section card component for dashboard layout
 function SectionCard({
   title,
   subtitle,
