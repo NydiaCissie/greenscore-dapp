@@ -168,6 +168,8 @@ async function createRelayerInstance(provider: Eip1193Provider, signal: AbortSig
   return instance;
 }
 
+// Main entry point for creating FHEVM instance
+// Automatically selects between mock and real relayer based on chainId
 export async function createFhevmInstance(params: CreateInstanceParams) {
   const { provider, chainId, signal } = params;
   throwIfAborted(signal);
