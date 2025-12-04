@@ -18,6 +18,7 @@ export function useFhevmManager({
   const [error, setError] = useState<string | undefined>(undefined);
   const controllerRef = useRef<AbortController | null>(null);
 
+  // Build FHEVM instance with proper error handling and abort support
   const build = useCallback(async () => {
     if (!provider || chainId === undefined) {
       console.log("[useFhevmManager] No provider or chainId, status: idle");
