@@ -6,6 +6,7 @@ import {ZamaEthereumConfig} from "@fhevm/solidity/config/ZamaConfig.sol";
 
 /// @title GreenScore - Privacy-preserving environmental behavior scoring
 /// @notice Aggregates encrypted low-carbon actions, maintains anonymized leaderboards, and manages encrypted rewards.
+/// @dev Uses FHEVM's euint64 types for all sensitive score calculations
 contract GreenScore is ZamaEthereumConfig {
     struct UserData {
         euint64 encryptedScore;
